@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Calling Prompt From Lwc" icon-name="utility-heart">
+        <lightning-input label=" Enter Your Question(You can Ask Anything)" onchange={CapQuest}> </lightning-input>
+        <lightning-button label="Ask" variant="success" icon-name="utility:frozen" onclick={CallPrompt}> </lightning-button>
+        <p><b>{outputFromPrompt}</b></p>
+    </lightning-card>
+</template>
