@@ -13,6 +13,7 @@ public with sharing class CallPromptAgentForceFromApex {
 		PromptGenInput.additionalConfig = new ConnectApi.EinsteinLlmAdditionalConfigInput();
 		PromptGenInput.additionalConfig.applicationName = 'PromptTemplateGenerationsInvocable';
 		ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationOutput = ConnectApi.EinsteinLlm.generateMessagesForPromptTemplate('AF_Ask_me_any_thing', PromptGenInput);
+		// return
 		return generationOutput.generations[0].text;
 	}
 	
